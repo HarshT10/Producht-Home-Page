@@ -2,7 +2,9 @@
 
 - This project is a home page for a Brand's website. 
 
+[Netlify](https://product-home-page-harshthakkar1011.netlify.app/)
 
+![Badge](https://img.shields.io/badge/Netlify-Link-green)
 
 ---
 
