@@ -1,4 +1,4 @@
-# **Project 6 - Product Home Page**
+# **Project 7 - Product Home Page**
 
 - This project is a home page for a Brand's website. 
 
