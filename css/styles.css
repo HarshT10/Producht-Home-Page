@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0 10%;
+}
+
+/* Navbar */
+
+nav{
+    margin: 5% 0 6% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    width: 8%;
+    cursor: pointer;
+}
+
+nav .nav-items{
+    display: flex;
+    margin-left: 7%;
+}
+
+nav .nav-items .nav-item{
+    padding: 0 40px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+nav .nav-items .nav-item:hover{
+    color: #FE5E35;
+    font-weight: 600;
+}
+
+nav .nav-items .active-item{
+    color: #FE5E35;
+    font-weight: 600;
+}
+
+nav .actions{
+    width: 19%;
+    cursor: pointer;
+}
+
+/* Intro-Section */
+
+.intro-section{
+    display: flex;
+}
+
+/* Left Section */
+
+.intro-section .left-section{
+    width: 55%;
+}
+
+.intro-section .left-section h3{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
+
+.intro-section .left-section h3 img{
+    width: 8%;
+    margin-left: 2%;
+}
+
+.intro-section .left-section h1{
+    margin-top: 2%;
+    font-family: 'Fredoka One', cursive;
+    font-size: 5rem;
+}
+
+.intro-section .left-section .sub-headlines{
+    margin: 5% 0;
+}
+
+.intro-section .left-section .sub-headlines .sub-headline{
+    display: flex;
+    padding: 1% 10%;
+    align-items: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.intro-section .left-section .sub-headlines .sub-headline img{
+    border-radius: 50%;
+    padding: 8px;
+    width: 5%;
+    background-color: #FE5E35;
+    margin-right: 4%;
+}
+
+.intro-section .left-section p{
+    color: #7c7c7c;
+    width: 87%;
+}
+
+.intro-section .left-section .action-btns{
+    margin-top: 7%;
+}
+
+.action-btn{
+    padding: 20px 40px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: #FE5E35;
+    border: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.intro-section .left-section .action-btns .second-btn{
+    margin-left: 3%;
+}
+
+/* Right Section */
+
+.intro-section .right-section{
+    width: 45%;
+    position: relative;
+}
+
+
+.intro-section .right-section .headphone-div .headphone{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    width: 80%;
+}
+
+.intro-section .right-section .headphone-div .discount{
+    position: absolute;
+    bottom: 35%;
+    filter: drop-shadow(5px 5px 2px #272727);
+    width: 25%;
+}
+
+.intro-section .right-section .headphone-div .discount-content{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: 46%;
+    left: 5.5%;
+}
+
+.intro-section .right-section .headphone-div .discount-content h4{
+    font-size: 0.9rem;
+}
+
+.intro-section .right-section .headphone-div .discount-content h1{
+    font-size: 3rem;
+}
+
+.intro-section .right-section .dots{
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.intro-section .right-section .dots .dot{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
+.intro-section .right-section .dots .yellow-dot{
+    background-color: #F4BE2C;
+}
+
+.intro-section .right-section .dots .tomato-dot{
+    background-color: #BF3325;
+}
+
+.intro-section .right-section .dots .black-dot{
+    background-color: #000000;
+}
+
+.intro-section .right-section .action-btn{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
