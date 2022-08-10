@@ -11,7 +11,7 @@
 ### **What did I learn from this Project?**
 
 - Flexbox
-- More About Positioning
+- More About Positions
 - Filter : Drop Shadow
 
 ---
