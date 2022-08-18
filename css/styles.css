@@ -1,90 +1,86 @@
-*{
+* {
     margin: 0;
     padding: 0;
     outline: none;
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Poppins', sans-serif;
     margin: 0 10%;
 }
 
 /* Navbar */
 
-nav{
-    margin: 5% 0 6% 0;
+nav {
+    margin-top: 5%;
+    margin-bottom: 6%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav .logo{
-    width: 8%;
+nav .logo {
     cursor: pointer;
 }
 
-nav .nav-items{
+nav .nav-items {
     display: flex;
     margin-left: 7%;
 }
 
-nav .nav-items .nav-item{
+nav .nav-items .nav-item {
     padding: 0 40px;
     font-size: 22px;
     font-weight: 400;
 }
 
-nav .nav-items .nav-item:hover{
+nav .nav-items .nav-item:hover {
     color: #FE5E35;
     font-weight: 600;
 }
 
-nav .nav-items .active-item{
+nav .nav-items .active-item {
     color: #FE5E35;
     font-weight: 600;
 }
 
-nav .actions{
-    width: 19%;
+nav .actions {
     cursor: pointer;
 }
 
 /* Intro-Section */
 
-.intro-section{
-    display: flex;
+.intro-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 /* Left Section */
 
-.intro-section .left-section{
-    width: 55%;
-}
-
-.intro-section .left-section h3{
+.intro-section .left-section h3 {
     font-size: 3rem;
     display: flex;
     align-items: center;
     font-weight: 400;
 }
 
-.intro-section .left-section h3 img{
+.intro-section .left-section h3 img {
     width: 8%;
     margin-left: 2%;
 }
 
-.intro-section .left-section h1{
+.intro-section .left-section h1 {
     margin-top: 2%;
     font-family: 'Fredoka One', cursive;
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
-.intro-section .left-section .sub-headlines{
+.intro-section .left-section .sub-headlines {
     margin: 5% 0;
 }
 
-.intro-section .left-section .sub-headlines .sub-headline{
+.intro-section .left-section .sub-headlines .sub-headline {
     display: flex;
     padding: 1% 10%;
     align-items: center;
@@ -92,7 +88,7 @@ nav .actions{
     font-weight: 400;
 }
 
-.intro-section .left-section .sub-headlines .sub-headline img{
+.intro-section .left-section .sub-headlines .sub-headline img {
     border-radius: 50%;
     padding: 8px;
     width: 5%;
@@ -100,16 +96,17 @@ nav .actions{
     margin-right: 4%;
 }
 
-.intro-section .left-section p{
+.intro-section .left-section p {
     color: #7c7c7c;
-    width: 87%;
+    font-size: 1rem;
+    max-width: 87%;
 }
 
-.intro-section .left-section .action-btns{
+.intro-section .left-section .action-btns {
     margin-top: 7%;
 }
 
-.action-btn{
+.action-btn {
     padding: 20px 40px;
     font-size: 1.5rem;
     color: #ffffff;
@@ -119,61 +116,68 @@ nav .actions{
     cursor: pointer;
 }
 
-.intro-section .left-section .action-btns .second-btn{
+.intro-section .left-section .action-btns .second-btn {
     margin-left: 3%;
 }
 
 /* Right Section */
 
-.intro-section .right-section{
-    width: 45%;
+.intro-section .right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-section .right-section .headphone-div{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    bottom: 11%;
+}
+
+.intro-section .right-section .headphone-div .headphone{
+    width: 85%;
     position: relative;
 }
 
-
-.intro-section .right-section .headphone-div .headphone{
+.intro-section .right-section .headphone-div .discount {
     position: absolute;
-    top: -10%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
+    z-index: 1;
+    left: 0;
+    bottom: 15%;
+    filter: drop-shadow(5px 5px 2px #272727);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-section .right-section .headphone-div .discount img{
     width: 80%;
 }
 
-.intro-section .right-section .headphone-div .discount{
+.intro-section .right-section .headphone-div .discount-content {
     position: absolute;
-    bottom: 35%;
-    filter: drop-shadow(5px 5px 2px #272727);
-    width: 25%;
-}
-
-.intro-section .right-section .headphone-div .discount-content{
     text-align: center;
     font-family: 'Fredoka One', cursive;
     color: #ffffff;
     display: inline-block;
-    position: absolute;
-    top: 46%;
-    left: 5.5%;
 }
 
-.intro-section .right-section .headphone-div .discount-content h4{
+.intro-section .right-section .headphone-div .discount-content h4 {
     font-size: 0.9rem;
 }
 
-.intro-section .right-section .headphone-div .discount-content h1{
+.intro-section .right-section .headphone-div .discount-content h1 {
     font-size: 3rem;
 }
 
-.intro-section .right-section .dots{
-    position: absolute;
-    bottom: 17%;
-    left: 50%;
-    transform: translateX(-50%);
+.intro-section .right-section .dots {
     display: flex;
+    position: relative;
+    bottom: 8%;
 }
 
-.intro-section .right-section .dots .dot{
+.intro-section .right-section .dots .dot {
     height: 30px;
     width: 30px;
     border-radius: 50%;
@@ -181,21 +185,508 @@ nav .actions{
     cursor: pointer;
 }
 
-.intro-section .right-section .dots .yellow-dot{
+.intro-section .right-section .dots .yellow-dot {
     background-color: #F4BE2C;
 }
 
-.intro-section .right-section .dots .tomato-dot{
-    background-color: #BF3325;
+.intro-section .right-section .dots .tomato-dot {
+    background-color: #FE5E35;
 }
 
-.intro-section .right-section .dots .black-dot{
+.intro-section .right-section .dots .black-dot {
     background-color: #000000;
 }
 
-.intro-section .right-section .action-btn{
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
+.intro-section .right-section .action-btn {
+    position: relative;
+    bottom: 1%;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+    
+    nav .nav-items {
+        display: none;
+    }
+    
+    /* Intro-Section */
+    
+    .intro-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Left Section */
+    
+    .intro-section .left-section h3 {
+        font-size: 2rem;
+    }
+
+    .intro-section .left-section h1 {
+        font-size: 3rem;
+    }
+
+    .intro-section .left-section .sub-headlines .sub-headline {
+        font-size: 1.5rem;
+    }
+    
+    .intro-section .left-section .sub-headlines .sub-headline img {
+        padding: 6px;
+    }
+    
+    .intro-section .left-section .action-btns {
+        margin-top: 7%;
+    }
+    
+    .action-btn {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+
+    /* Right Section */
+    
+    .intro-section .right-section .headphone-div{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        bottom: 0;
+    }
+    
+    .intro-section .right-section .headphone-div .headphone{
+        width: 75%;
+        position: relative;
+        bottom: 7%;
+    }
+
+    .intro-section .right-section .headphone-div .discount img{
+        width: 60%;
+    }
+    .intro-section .right-section .headphone-div .discount-content h4 {
+        font-size: 0.9rem;
+    }
+    
+    .intro-section .right-section .headphone-div .discount-content h1 {
+        font-size: 1.7rem;
+    }
+    
+    .intro-section .right-section .dots {
+        position: relative;
+        bottom: 6%;
+    }
+    
+    .intro-section .right-section .dots .dot {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .intro-section .right-section .dots .yellow-dot {
+        background-color: #F4BE2C;
+    }
+    
+    .intro-section .right-section .dots .tomato-dot {
+        background-color: #FE5E35;
+    }
+    
+    .intro-section .right-section .dots .black-dot {
+        background-color: #000000;
+    }
+    
+    .intro-section .right-section .action-btn {
+        position: relative;
+        bottom: .5%;
+    }
+
+}
+
+@media only screen and (min-width: 882px) and (max-width: 1024px) {
+
+    nav{
+        margin-bottom: 8%;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+    
+    /* Intro-Section */
+    
+    .intro-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    /* Left Section */
+    
+    
+    .intro-section .left-section h3 {
+        font-size: 2rem;
+        display: flex;
+        align-items: center;
+        font-weight: 400;
+    }
+    
+    .intro-section .left-section h3 img {
+        width: 8%;
+        margin-left: 2%;
+    }
+    
+    .intro-section .left-section h1 {
+        font-size: 3.5rem;
+    }
+
+    .intro-section .left-section .sub-headlines .sub-headline {
+        font-size: 1.3rem;
+    }
+    
+    .intro-section .left-section .sub-headlines .sub-headline img {
+        padding: 5px;
+        width: 7%;
+    }
+    
+    .intro-section .left-section p {
+        font-size: .85rem;
+    }
+    
+    .intro-section .left-section .action-btns {
+        margin-top: 7%;
+    }
+    
+    .action-btn {
+        padding: 15px 30px;
+        font-size: 1.2rem;
+    }
+    
+    /* Right Section */
+    
+    .intro-section .right-section .headphone-div{
+        bottom: 0;
+    }
+    
+    .intro-section .right-section .headphone-div .headphone{
+        width: 95%;
+    }
+    
+    .intro-section .right-section .headphone-div .discount {
+        left: -15%;
+    }
+    
+    .intro-section .right-section .headphone-div .discount img{
+        width: 60%;
+    }
+    
+    .intro-section .right-section .headphone-div .discount-content h4 {
+        font-size: 0.8rem;
+    }
+    
+    .intro-section .right-section .headphone-div .discount-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .intro-section .right-section .dots {
+        position: static;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    .intro-section .right-section .action-btn {
+        position: static;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 882px) {
+
+    body{
+        margin: 0 5%;
+        padding: 5% 0;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+
+    /* Intro-Section */
+    
+    .intro-section {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    
+    /* Left Section */
+
+    .intro-section .left-section{
+        text-align: left;
+    }
+
+    .intro-section .left-section h3 {
+        font-size: 2rem;
+    }
+    
+    .intro-section .left-section h3 img {
+        width: 6%;
+    }
+    
+    .intro-section .left-section h1 {
+        font-size: 3rem;
+    }
+
+    .intro-section .left-section .sub-headlines .sub-headline {
+        font-size: 1.5rem;
+    }
+    
+    .intro-section .left-section .sub-headlines .sub-headline img {
+        padding: 6px;
+    }
+    
+    .intro-section .left-section p {
+        color: #7c7c7c;
+        font-size: 1rem;
+    }
+    
+    .intro-section .left-section .action-btns {
+        margin-top: 7%;
+    }
+    
+    .action-btn {
+        padding: 15px 30px;
+        font-size: 1.3rem;
+    }
+    
+    .intro-section .left-section .action-btns .second-btn {
+        margin-left: 3%;
+    }
+    
+    /* Right Section */
+
+    .intro-section .right-section .headphone-div{
+        position: relative;
+        bottom: 0;
+    }
+    
+    .intro-section .right-section .headphone-div .headphone{
+        width: 85%;
+    }
+    
+    .intro-section .right-section .headphone-div .discount img{
+        width: 65%;
+    }
+
+    .intro-section .right-section .headphone-div .discount-content h4 {
+        font-size: 0.9rem;
+    }
+    
+    .intro-section .right-section .headphone-div .discount-content h1 {
+        font-size: 2rem;
+    }
+    
+    .intro-section .right-section .dots {
+        position: static;
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    
+    .intro-section .right-section .dots .dot {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .intro-section .right-section .action-btn {
+        position: static;
+    }
+
+}
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+    body{
+        margin: 0 5%;
+        padding: 5% 0;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+
+    nav .logo{
+        width: 20%;
+    }
+
+    nav .actions{
+        width: 50%;
+    }
+
+    /* Intro-Section */
+    
+    .intro-section {
+        margin-top: 15%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    
+    /* Left Section */
+
+    .intro-section .left-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .intro-section .left-section h1 {
+        font-size: 2rem;
+    }
+
+    .intro-section .left-section .sub-headlines .sub-headline {
+        font-size: 1.2rem;
+    }
+    
+    .intro-section .left-section .sub-headlines .sub-headline img {
+        padding: 5px;
+        width: 6%;
+    }
+    
+    .intro-section .left-section p {
+        font-size: .9rem;
+        min-width: 100%;
+    }
+    
+    .action-btn {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+    }
+
+    /* Right Section */
+
+    .intro-section .right-section .headphone-div{
+        position: relative;
+        bottom: 0;
+    }
+    
+    .intro-section .right-section .headphone-div .headphone{
+        width: 85%;
+    }
+
+    .intro-section .right-section .headphone-div .discount img{
+        width: 55%;
+    }
+
+    .intro-section .right-section .headphone-div .discount-content h4 {
+        font-size: 0.9rem;
+    }
+    
+    .intro-section .right-section .headphone-div .discount-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .intro-section .right-section .dots {
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    
+    .intro-section .right-section .dots .dot {
+        height: 20px;
+        width: 20px;
+    }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    body{
+        margin: 0 5%;
+        padding: 5% 0;
+    }
+
+    nav .nav-items {
+        display: none;
+    }
+
+    nav .logo{
+        width: 25%;
+    }
+
+    nav .actions{
+        width: 50%;
+    }
+
+    /* Intro-Section */
+    
+    .intro-section {
+        margin-top: 10%;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+    
+    /* Left Section */
+
+    .intro-section .left-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .intro-section .left-section h1 {
+        font-size: 2rem;
+    }
+
+    .intro-section .left-section .sub-headlines .sub-headline {
+        font-size: 1rem;
+    }
+    
+    .intro-section .left-section .sub-headlines .sub-headline img {
+        padding: 4px;
+        width: 6%;
+    }
+    
+    .intro-section .left-section p {
+        font-size: .7rem;
+        min-width: 100%;
+    }
+    
+    .action-btn {
+        padding: 12px 25px;
+        font-size: .9rem;
+    }
+    
+    .intro-section .left-section .action-btns{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* Right Section */
+
+    .intro-section .right-section .headphone-div{
+        position: relative;
+        bottom: 0;
+    }
+    
+    .intro-section .right-section .headphone-div .headphone{
+        width: 85%;
+    }
+    
+    .intro-section .right-section .headphone-div .discount {
+        left: -15%;
+    }
+
+    .intro-section .right-section .headphone-div .discount img{
+        width: 35%;
+    }
+
+    .intro-section .right-section .headphone-div .discount-content h4 {
+        font-size: 0.6rem;
+    }
+    
+    .intro-section .right-section .headphone-div .discount-content h1 {
+        font-size: 1rem;
+    }
+    
+    .intro-section .right-section .dots {
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    
+    .intro-section .right-section .dots .dot {
+        height: 15px;
+        width: 15px;
+    }
+
 }
