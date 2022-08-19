@@ -1,6 +1,6 @@
 # **Project 7 - Product Home Page**
 
-- This project is a home page for a Brand's website. 
+- This project is a home page for a Brand's website. It is Fully Responsive.
 
 [Netlify](https://product-home-page-harshcodes.netlify.app/)
 
